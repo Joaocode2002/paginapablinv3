@@ -334,11 +334,11 @@ function Index() {
           </section>
           
           <p 
-            className="mt-4 text-center uppercase font-montserrat font-bold tracking-[4px]"
+            className="mt-4 text-center uppercase font-montserrat font-bold tracking-[3px]"
             style={{ 
               color: 'oklch(1 0 0 / 0.6)',
-              fontSize: '10px',
-              lineHeight: '15px'
+              fontSize: '8px',
+              lineHeight: '12px'
             }}
           >
             NÃO FIQUE DE FORA CLIQUE NO <span style={{ color: 'oklch(0.866 0.284 142.495)' }}>BOTÃO ACIMA</span>
