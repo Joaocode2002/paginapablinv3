@@ -160,11 +160,11 @@ function Index() {
   return (
     <div className="bg-black text-white selection:bg-brand-green selection:text-black">
       {/* Alert Banner */}
-      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center border-b border-white/10 bg-brand-green px-4 py-3 text-center text-xs font-bold tracking-wide text-black">
+      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center border-b border-white/10 bg-brand-green px-4 py-3 text-center text-xs font-bold tracking-wide text-white">
         <span>
           ESTE SITE PODE CAIR A QUALQUER MOMENTO
         </span>
-        <AlertTriangle className="ml-2 h-4 w-4 text-yellow-400 stroke-[3px]" />
+        <AlertTriangle className="ml-2 h-4 w-4 text-white stroke-[3px]" />
       </header>
 
       <main className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden pt-24 pb-20">
