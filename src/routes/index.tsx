@@ -321,7 +321,7 @@ function Index() {
       </main>
       
       {/* Footer */}
-      <footer className="relative z-50 w-full bg-black py-10 px-4 text-center border-t border-white/20">
+      <footer className="relative z-50 w-full bg-black py-10 px-4 text-center">
         <p className="font-montserrat text-[0.75rem] font-bold uppercase tracking-[0.3em] text-white">
           © 2026 @PABLOG. TODOS OS DIREITOS RESERVADOS.
         </p>
