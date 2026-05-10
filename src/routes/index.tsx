@@ -28,7 +28,7 @@ function Index() {
     }
 
     setTimeout(() => {
-      window.open(WHATSAPP_LINK, "_blank");
+      window.location.href = WHATSAPP_LINK;
       setLoading(false);
     }, 1200);
   };
