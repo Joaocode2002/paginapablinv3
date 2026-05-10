@@ -307,7 +307,10 @@ function Index() {
               </button>
             </div>
           </section>
-        </div>
+              <p className="mt-4 font-montserrat text-sm text-white/60 tracking-wider">
+                Não perde tempo clique no botão acima!
+              </p>
+            </div>
 
         {/* Footer */}
         <footer className="mt-20 w-full px-4 text-center text-[0.7rem] uppercase tracking-[0.3em] text-white/40">
