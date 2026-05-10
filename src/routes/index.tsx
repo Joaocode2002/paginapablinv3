@@ -204,7 +204,7 @@ function Index() {
                 poster="https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/2ef67223-f436-4dbd-a93f-a2afcceeb95a.png"
               >
                 {/* Fallback to original site video URL if possible, otherwise use a high quality gambling/sports background */}
-                <source src="https://player.vimeo.com/external/494451565.sd.mp4?s=d7667d46-4dbd-a93f-a2afcceeb95a&profile_id=165" type="video/mp4" />
+                <source src="/video1.mp4" type="video/mp4" />
               </video>
 
               {/* Video Controls Overlay */}
