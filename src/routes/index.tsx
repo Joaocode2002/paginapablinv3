@@ -305,7 +305,7 @@ function Index() {
             </div>
           </section>
               <p className="mt-4 font-montserrat text-sm text-white/60 tracking-wider">
-                não fique de fora clique no botão acima
+                NÃO FIQUE DE FORA CLIQUE NO BOTÃO ACIMA
               </p>
             </div>
 
