@@ -147,11 +147,11 @@ function Index() {
   }, []);
 
   const results = [
-    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/c6a9b3f7-8525-4653-95b0-a9d46958ef98.png",
-    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/f05dda7a-7a65-42f0-99ec-f115afb28b9f.png",
-    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/cfecafa4-a886-43d0-9f07-a4b57ad190b8.png",
-    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/13c72e02-ecd8-4f8f-84f3-934db225fc18.png",
-    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/56bcc3c9-ac39-4a1f-9d6b-65c75caff719.png",
+    "/resultados/1.png",
+    "/resultados/2.png",
+    "/resultados/3.png",
+    "/resultados/4.png",
+    "/resultados/5.png",
   ];
 
   // Triplicar para o loop infinito suave
