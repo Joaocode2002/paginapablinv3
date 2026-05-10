@@ -161,7 +161,7 @@ function Index() {
       {/* Alert Banner */}
       <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center border-b border-white/10 bg-[#004d00] px-4 py-3 text-center text-sm font-medium tracking-wide text-white">
         <span>
-          Acessos acima do normal. <strong>ESTE SITE PODE CAIR A QUALQUER MOMENTO</strong>
+          ESTE SITE PODE CAIR A QUALQUER MOMENTO
         </span>
         <AlertTriangle className="ml-2 h-4 w-4 text-yellow-400" />
       </header>
