@@ -30,7 +30,7 @@ function Index() {
     setTimeout(() => {
       window.open(WHATSAPP_LINK, "_blank");
       setLoading(false);
-    }, 1500);
+    }, 1200);
   };
 
   const togglePlay = () => {
