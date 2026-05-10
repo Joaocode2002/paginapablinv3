@@ -253,9 +253,6 @@ function Index() {
                 </button>
               )}
             </div>
-            <p className="mt-4 font-montserrat text-sm text-white/60 tracking-wider">
-              Não perde tempo clique no botão acima!
-            </p>
           </section>
 
           {/* Student Results Section */}
