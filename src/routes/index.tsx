@@ -308,7 +308,7 @@ function Index() {
 
         {/* Footer */}
         <footer className="mt-20 w-full px-4 text-center text-[0.7rem] uppercase tracking-[0.3em] text-white/40">
-          <p>© {new Date().getFullYear()} @PABLOG. TODOS OS DIREITOS RESERVADOS.</p>
+          <p>© 2026 @PABLOG. TODOS OS DIREITOS RESERVADOS.</p>
         </footer>
       </main>
     </div>
