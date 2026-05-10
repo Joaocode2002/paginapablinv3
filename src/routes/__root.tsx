@@ -4,11 +4,8 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
-
-import appCss from "../styles.css?url";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function NotFoundComponent() {
   return (
@@ -68,70 +65,54 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "PabloG - Grupo Free Liberado" },
-      { name: "description", content: "Grupo grátis de métodos com acesso imediato." },
-      { name: "author", content: "PabloG" },
-      { property: "og:title", content: "PabloG - Grupo Free Liberado" },
-      { property: "og:description", content: "Grupo grátis de métodos com acesso imediato." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@PABLOG" },
-      { name: "twitter:title", content: "PabloG - Grupo Free Liberado" },
-      { name: "twitter:description", content: "Grupo grátis de métodos com acesso imediato." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c06094d5-a810-4a43-9a14-974333cff28e/id-preview-bbaf4409--bd0e0fc8-7750-459e-9ed8-9623f9e6aa39.lovable.app-1778453862184.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c06094d5-a810-4a43-9a14-974333cff28e/id-preview-bbaf4409--bd0e0fc8-7750-459e-9ed8-9623f9e6aa39.lovable.app-1778453862184.png" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      {
-        rel: "preconnect",
-        href: "https://fonts.googleapis.com",
-      },
-      {
-        rel: "preconnect",
-        href: "https://fonts.gstatic.com",
-        crossOrigin: "anonymous",
-      },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Outfit:wght@400;700;900&display=swap",
-      },
-    ],
-    scripts: [
-      {
-        children: `
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '1906227756853653');
-          fbq('track', 'PageView');
-        `,
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
 
-function RootShell({ children }: { children: React.ReactNode }) {
+function RootComponent() {
+  const { queryClient } = Route.useRouteContext();
+
   return (
-    <html lang="pt-BR">
-      <head>
-        <HeadContent />
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <Helmet>
+          <html lang="pt-BR" />
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>PabloG - Grupo Free Liberado</title>
+          <meta name="description" content="Grupo grátis de métodos com acesso imediato." />
+          <meta name="author" content="PabloG" />
+          <meta property="og:title" content="PabloG - Grupo Free Liberado" />
+          <meta property="og:description" content="Grupo grátis de métodos com acesso imediato." />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@PABLOG" />
+          <meta name="twitter:title" content="PabloG - Grupo Free Liberado" />
+          <meta name="twitter:description" content="Grupo grátis de métodos com acesso imediato." />
+          <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c06094d5-a810-4a43-9a14-974333cff28e/id-preview-bbaf4409--bd0e0fc8-7750-459e-9ed8-9623f9e6aa39.lovable.app-1778453862184.png" />
+          <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c06094d5-a810-4a43-9a14-974333cff28e/id-preview-bbaf4409--bd0e0fc8-7750-459e-9ed8-9623f9e6aa39.lovable.app-1778453862184.png" />
+          
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet" />
+          
+          <script>
+            {`
+              !function(f,b,e,v,n,t,s)
+              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+              n.queue=[];t=b.createElement(e);t.async=!0;
+              t.src=v;s=b.getElementsByTagName(e)[0];
+              s.parentNode.insertBefore(t,s)}(window, document,'script',
+              'https://connect.facebook.net/en_US/fbevents.js');
+              fbq('init', '1906227756853653');
+              fbq('track', 'PageView');
+            `}
+          </script>
+        </Helmet>
+
         <noscript>
           <img
             height="1"
@@ -141,21 +122,9 @@ function RootShell({ children }: { children: React.ReactNode }) {
             alt=""
           />
         </noscript>
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
-function RootComponent() {
-  const { queryClient } = Route.useRouteContext();
-
-  return (
-    <QueryClientProvider client={queryClient}>
-      <Outlet />
-    </QueryClientProvider>
+        <Outlet />
+      </QueryClientProvider>
+    </HelmetProvider>
   );
 }
