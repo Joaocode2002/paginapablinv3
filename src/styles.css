@@ -33,7 +33,7 @@
   --color-ring: var(--ring);
   --color-ring-offset-background: var(--background);
   
-  --color-brand-green: oklch(0.75 0.25 142.495);
+  --color-brand-green: oklch(0.60 0.20 142.495);
   --font-bebas: "Bebas Neue", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
   --font-outfit: "Outfit", sans-serif;
