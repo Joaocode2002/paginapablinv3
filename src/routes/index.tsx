@@ -304,13 +304,14 @@ function Index() {
               </button>
             </div>
           </section>
-              <p className="mt-4 font-montserrat text-sm text-white/60 tracking-wider uppercase">
-                NÃO FIQUE DE FORA CLIQUE NO BOTÃO ACIMA
-              </p>
-            </div>
+          
+          <p className="mt-4 font-montserrat text-sm text-white/60 tracking-wider uppercase">
+            NÃO FIQUE DE FORA CLIQUE NO BOTÃO ACIMA
+          </p>
+        </div>
 
         {/* Footer */}
-        <footer className="mt-20 w-full px-4 text-center text-[0.7rem] uppercase tracking-[0.3em] text-white/40">
+        <footer className="mt-12 w-full px-4 text-center text-[0.7rem] uppercase tracking-[0.3em] text-white/70">
           <p>© 2026 @PABLOG. TODOS OS DIREITOS RESERVADOS.</p>
         </footer>
       </main>
