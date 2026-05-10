@@ -23,8 +23,9 @@ function Index() {
     setLoading(true);
 
     // Track Lead if fbq is defined
-    if (typeof window !== "undefined" && window.fbq) {
-      window.fbq("track", "Lead");
+    const fbq = (window as any).fbq;
+    if (typeof fbq === "function") {
+      fbq("track", "Lead");
     }
 
     setTimeout(() => {
