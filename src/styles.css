@@ -38,11 +38,12 @@
   --font-montserrat: "Montserrat", sans-serif;
   --font-outfit: "Outfit", sans-serif;
 
-  @keyword border-rotate {
+  @keyframes border-rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
   }
 }
+
 
 :root {
   --radius: 0.625rem;
