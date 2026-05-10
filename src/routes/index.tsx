@@ -318,11 +318,15 @@ function Index() {
 
         </div>
 
-        {/* Footer */}
-        <footer className="mt-12 w-full px-4 text-center text-[0.7rem] uppercase tracking-[0.3em] text-white/70">
-          <p>© 2026 @PABLOG. TODOS OS DIREITOS RESERVADOS.</p>
-        </footer>
       </main>
+      
+      {/* Footer */}
+      <footer className="relative z-50 w-full bg-black py-8 px-4 text-center border-t border-white/10">
+        <p className="font-montserrat text-[0.7rem] font-bold uppercase tracking-[0.3em] text-white/70">
+          © 2026 @PABLOG. TODOS OS DIREITOS RESERVADOS.
+        </p>
+      </footer>
+
     </div>
   );
 }
