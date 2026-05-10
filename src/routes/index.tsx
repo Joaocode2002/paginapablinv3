@@ -305,7 +305,7 @@ function Index() {
             </div>
           </section>
               <p className="mt-4 font-montserrat text-sm text-white/60 tracking-wider">
-                Não perde tempo clique no botão acima!
+                não fique de fora clique no botão acima
               </p>
             </div>
 
