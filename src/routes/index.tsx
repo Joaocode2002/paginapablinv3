@@ -226,7 +226,8 @@ function Index() {
                 ref={videoRef}
                 className="h-full w-full object-cover"
                 playsInline
-                muted={isMuted}
+                autoPlay
+                muted
                 loop
                 poster="https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/2ef67223-f436-4dbd-a93f-a2afcceeb95a.png"
               >
