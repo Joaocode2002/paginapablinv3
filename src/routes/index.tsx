@@ -153,6 +153,7 @@ function Index() {
     "/resultados/4.png",
     "/resultados/5.png",
     "/resultados/6.png",
+    "/resultados/7.png",
   ];
 
   // Triplicar para o loop infinito suave
