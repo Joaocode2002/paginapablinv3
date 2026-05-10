@@ -80,6 +80,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@PABLOG" },
+      { name: "twitter:title", content: "PabloG - Grupo Free Liberado" },
+      { name: "twitter:description", content: "Grupo grátis de métodos com acesso imediato." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c06094d5-a810-4a43-9a14-974333cff28e/id-preview-bbaf4409--bd0e0fc8-7750-459e-9ed8-9623f9e6aa39.lovable.app-1778453862184.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c06094d5-a810-4a43-9a14-974333cff28e/id-preview-bbaf4409--bd0e0fc8-7750-459e-9ed8-9623f9e6aa39.lovable.app-1778453862184.png" },
     ],
     links: [
       {
