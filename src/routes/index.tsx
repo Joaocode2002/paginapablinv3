@@ -311,7 +311,7 @@ function Index() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-20 w-full px-4 text-center text-[0.7rem] uppercase tracking-[0.3em] text-white/40">
+        <footer className="mt-12 w-full px-4 text-center text-[0.7rem] uppercase tracking-[0.3em] text-white/70">
           <p>© 2026 @PABLOG. TODOS OS DIREITOS RESERVADOS.</p>
         </footer>
       </main>
