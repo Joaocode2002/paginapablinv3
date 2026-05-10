@@ -305,9 +305,17 @@ function Index() {
             </div>
           </section>
           
-          <p className="mt-4 font-montserrat text-sm text-white/60 tracking-wider uppercase">
+          <p 
+            className="mt-4 text-center uppercase font-montserrat font-bold tracking-[4px]"
+            style={{ 
+              color: 'oklch(0.866 0.284 142.495)',
+              fontSize: '10px',
+              lineHeight: '15px'
+            }}
+          >
             NÃO FIQUE DE FORA CLIQUE NO BOTÃO ACIMA
           </p>
+
         </div>
 
         {/* Footer */}
