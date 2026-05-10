@@ -91,13 +91,40 @@ function Index() {
     const video = videoRef.current;
     if (!video) return;
 
+    // Auto-play muted on load
+    video.muted = true;
+    video.play().catch(error => {
+      console.log("Auto-play was prevented:", error);
+    });
+
     const updateProgress = () => {
       const p = (video.currentTime / video.duration) * 100;
       setProgress(p);
     };
 
+    const handleInteraction = () => {
+      if (videoRef.current && videoRef.current.muted) {
+        videoRef.current.muted = false;
+        setIsMuted(false);
+        setVideoStarted(true);
+        setIsPlaying(true);
+        setVolume(1);
+        videoRef.current.volume = 1;
+        // Remove listeners after first successful unmute interaction
+        document.removeEventListener("touchstart", handleInteraction);
+        document.removeEventListener("click", handleInteraction);
+      }
+    };
+
+    document.addEventListener("touchstart", handleInteraction);
+    document.addEventListener("click", handleInteraction);
+
     video.addEventListener("timeupdate", updateProgress);
-    return () => video.removeEventListener("timeupdate", updateProgress);
+    return () => {
+      video.removeEventListener("timeupdate", updateProgress);
+      document.removeEventListener("touchstart", handleInteraction);
+      document.removeEventListener("click", handleInteraction);
+    };
   }, []);
 
   // Infinite Carousel Logic
