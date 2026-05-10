@@ -163,7 +163,7 @@ function Index() {
         <span>
           ESTE SITE PODE CAIR A QUALQUER MOMENTO
         </span>
-        <AlertTriangle className="ml-2 h-4 w-4 text-black" />
+        <AlertTriangle className="ml-2 h-4 w-4 text-yellow-400" />
       </header>
 
       <main className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden pt-24 pb-20">
