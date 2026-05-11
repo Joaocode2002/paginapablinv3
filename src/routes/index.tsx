@@ -290,7 +290,7 @@ function Index() {
             <div className="relative">
               <div 
                 ref={carouselRef}
-                className="flex gap-1 overflow-x-hidden scroll-smooth pb-4 scrollbar-hide"
+                className="flex gap-0 overflow-x-hidden scroll-smooth pb-4 scrollbar-hide"
               >
                 {carouselItems.map((src, idx) => (
                   <div 
