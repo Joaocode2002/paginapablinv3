@@ -377,7 +377,7 @@ function Index() {
             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
           </svg>
         </a>
-        <p className="text-[0.7rem] uppercase tracking-[0.25em] text-foreground/45 text-center">
+        <p className="text-[0.56rem] md:text-[0.7rem] uppercase tracking-[0.25em] text-foreground/45 text-center">
           © 2026 @PABLOG. TODOS OS DIREITOS RESERVADOS.
         </p>
       </footer>
