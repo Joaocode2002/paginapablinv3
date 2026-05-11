@@ -6,6 +6,7 @@ import {
   useRouter,
 } from "@tanstack/react-router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { ProtectContent } from "@/components/ProtectContent";
 
 function NotFoundComponent() {
   return (
