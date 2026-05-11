@@ -300,13 +300,13 @@ function Index() {
                 {carouselItems.map((src, idx) => (
                   <div 
                     key={idx} 
-                    className="min-w-[calc(35%-8px)] shrink-0 transition-transform hover:scale-[1.02] md:min-w-[calc(17.5%-12px)]"
+                    className="min-w-[calc(50%-8px)] shrink-0 transition-transform hover:scale-[1.02] md:min-w-[calc(25%-12px)]"
                   >
-                    <div className="aspect-[9/16] w-full overflow-hidden rounded-xl border border-white/10 shadow-lg">
+                    <div className="w-full overflow-hidden rounded-xl border border-white/10 shadow-lg">
                       <img 
                         src={src} 
                         alt={`Resultado ${idx + 1}`} 
-                        className="h-full w-full object-cover"
+                        className="h-auto w-full object-contain"
                         loading="lazy"
                       />
                     </div>
