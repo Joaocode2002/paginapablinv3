@@ -157,7 +157,7 @@ function Index() {
   return (
     <div className="bg-black text-white selection:bg-brand-green selection:text-black">
       {/* Alert Banner */}
-      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center border-b border-white/10 bg-brand-green px-4 py-3 text-center text-xs font-bold tracking-wide text-white">
+      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center border-b border-white/10 bg-black px-4 py-3 text-center text-xs font-bold tracking-wide text-white">
         <span>
           ESTE SITE PODE CAIR A QUALQUER MOMENTO
         </span>
