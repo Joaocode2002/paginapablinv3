@@ -295,7 +295,7 @@ function Index() {
                 {carouselItems.map((src, idx) => (
                   <div 
                     key={idx} 
-                    className="min-w-[calc(45%-8px)] shrink-0 transition-transform hover:scale-[1.02] md:min-w-[calc(26.66%-11px)]"
+                    className="min-w-[calc(45%-8px)] shrink-0 md:min-w-[calc(26.66%-11px)]"
                   >
                     <div className="aspect-[9/16] w-[98%] md:w-[95%] max-w-[300px] md:max-w-[320px] overflow-hidden rounded-lg border border-white/10 bg-zinc-900 shadow-lg mx-auto">
                       <img 
