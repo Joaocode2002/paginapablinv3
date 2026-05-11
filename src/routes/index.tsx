@@ -30,7 +30,6 @@ function Index() {
 
     setTimeout(() => {
       window.location.href = WHATSAPP_LINK;
-      setLoading(false);
     }, 1200);
   };
 
