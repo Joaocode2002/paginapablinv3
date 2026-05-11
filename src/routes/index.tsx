@@ -300,12 +300,14 @@ function Index() {
                     key={idx} 
                     className="min-w-[calc(50%-8px)] shrink-0 transition-transform hover:scale-[1.02] md:min-w-[calc(33.333%-11px)]"
                   >
-                    <img 
-                      src={src} 
-                      alt={`Resultado ${idx + 1}`} 
-                      className="h-auto w-full rounded-xl border border-white/10 shadow-lg"
-                      loading="lazy"
-                    />
+                    <div className="aspect-[9/16] w-full overflow-hidden rounded-xl border border-white/10 bg-zinc-900 shadow-lg">
+                      <img 
+                        src={src} 
+                        alt={`Resultado ${idx + 1}`} 
+                        className="h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                    </div>
                   </div>
                 ))}
               </div>
