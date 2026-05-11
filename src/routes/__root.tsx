@@ -6,6 +6,7 @@ import {
   useRouter,
 } from "@tanstack/react-router";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { ProtectContent } from "@/components/ProtectContent";
 
 function NotFoundComponent() {
   return (
@@ -98,6 +99,7 @@ function RootComponent() {
           <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet" />
         </Helmet>
 
+        <ProtectContent />
         <Outlet />
       </QueryClientProvider>
     </HelmetProvider>
