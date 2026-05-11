@@ -147,13 +147,11 @@ function Index() {
   }, []);
 
   const results = [
-    "/resultados/1.png",
-    "/resultados/2.png",
-    "/resultados/3.png",
-    "/resultados/4.png",
-    "/resultados/5.png",
-    "/resultados/6.png",
-    "/resultados/7.png",
+    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/c6a9b3f7-8525-4653-95b0-a9d46958ef98.png",
+    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/f05dda7a-7a65-42f0-99ec-f115afb28b9f.png",
+    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/cfecafa4-a886-43d0-9f07-a4b57ad190b8.png",
+    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/13c72e02-ecd8-4f8f-84f3-934db225fc18.png",
+    "https://qtbkvshbmqlszncxlcuc.supabase.co/storage/v1/object/public/dsl-uploads/vrDSpkSwV6bqfLCUPP56OMBdVOz2/56bcc3c9-ac39-4a1f-9d6b-65c75caff719.png",
   ];
 
   // Triplicar para o loop infinito suave
@@ -300,16 +298,14 @@ function Index() {
                 {carouselItems.map((src, idx) => (
                   <div 
                     key={idx} 
-                    className="min-w-[calc(50%-8px)] shrink-0 transition-transform hover:scale-[1.02] md:min-w-[calc(25%-12px)]"
+                    className="min-w-[calc(50%-8px)] shrink-0 transition-transform hover:scale-[1.02] md:min-w-[calc(33.333%-11px)]"
                   >
-                    <div className="w-full overflow-hidden rounded-xl border border-white/10 shadow-lg">
-                      <img 
-                        src={src} 
-                        alt={`Resultado ${idx + 1}`} 
-                        className="w-full h-full"
-                        loading="lazy"
-                      />
-                    </div>
+                    <img 
+                      src={src} 
+                      alt={`Resultado ${idx + 1}`} 
+                      className="h-auto w-full rounded-xl border border-white/10 shadow-lg"
+                      loading="lazy"
+                    />
                   </div>
                 ))}
               </div>
