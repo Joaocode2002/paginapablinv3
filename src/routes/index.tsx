@@ -147,11 +147,11 @@ function Index() {
   }, []);
 
   const results = [
-    "/aluno1.png",
-    "/aluno2.png",
-    "/aluno3.png",
-    "/aluno4.png",
-    "/aluno5.png",
+    "/1.png",
+    "/2.png",
+    "/3.png",
+    "/4.png",
+    "/5.png",
   ];
 
   // Triplicar para o loop infinito suave
