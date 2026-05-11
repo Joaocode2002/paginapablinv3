@@ -305,7 +305,7 @@ function Index() {
                     <img 
                       src={src} 
                       alt={`Resultado ${idx + 1}`} 
-                      className="h-auto w-full rounded-xl border border-white/10 shadow-lg"
+                      className="aspect-[9/16] w-full rounded-xl border border-white/10 object-cover shadow-lg"
                       loading="lazy"
                     />
                   </div>
