@@ -306,7 +306,7 @@ function Index() {
                       <img 
                         src={src} 
                         alt={`Resultado ${idx + 1}`} 
-                        className="h-auto w-full object-contain"
+                        className="w-full h-full"
                         loading="lazy"
                       />
                     </div>
