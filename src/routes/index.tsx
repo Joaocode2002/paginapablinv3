@@ -378,7 +378,7 @@ function Index() {
           </svg>
         </a>
         <p className="text-[0.56rem] md:text-[0.7rem] uppercase tracking-[0.25em] text-foreground/45 text-center">
-          © 2026 @PABLOG. TODOS OS DIREITOS RESERVADOS.
+          ©PABLOG MÉTODOS<br />2026 TODOS OS DIREITOS RESERVADOS.
         </p>
       </footer>
 
