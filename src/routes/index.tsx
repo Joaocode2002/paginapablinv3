@@ -146,7 +146,10 @@ function Index() {
     return () => cancelAnimationFrame(animationId);
   }, []);
 
-  const results: string[] = [];
+  // Carrega automaticamente /resultados/1.png, 2.png, ... até 50.png
+  // Basta enviar arquivos com nome numérico (1.png, 2.png, 3.png...) na pasta public/resultados
+  const MAX_RESULTS = 50;
+  const results: string[] = Array.from({ length: MAX_RESULTS }, (_, i) => `/resultados/${i + 1}.png`);
 
   // Triplicar para o loop infinito suave
   const carouselItems = [...results, ...results, ...results];
