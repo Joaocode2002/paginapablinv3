@@ -146,13 +146,7 @@ function Index() {
     return () => cancelAnimationFrame(animationId);
   }, []);
 
-  const results = [
-    "/resultados/1.png",
-    "/resultados/2.png",
-    "/resultados/3.png",
-    "/resultados/4.png",
-    "/resultados/5.png",
-  ];
+  const results: string[] = [];
 
   // Triplicar para o loop infinito suave
   const carouselItems = [...results, ...results, ...results];
