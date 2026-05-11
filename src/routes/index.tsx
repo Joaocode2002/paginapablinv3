@@ -290,14 +290,14 @@ function Index() {
             <div className="relative">
               <div 
                 ref={carouselRef}
-                className="flex gap-1 overflow-x-hidden scroll-smooth pb-4 scrollbar-hide"
+                className="flex gap-0 overflow-x-hidden scroll-smooth pb-4 scrollbar-hide"
               >
                 {carouselItems.map((src, idx) => (
                   <div 
                     key={idx} 
                     className="min-w-[calc(45%-8px)] shrink-0 transition-transform hover:scale-[1.02] md:min-w-[calc(26.66%-11px)]"
                   >
-                    <div className="aspect-[9/16] w-[90%] md:w-[80%] max-w-[300px] md:max-w-[320px] overflow-hidden rounded-lg border border-white/10 bg-zinc-900 shadow-lg mx-auto">
+                    <div className="aspect-[9/16] w-[98%] md:w-[95%] max-w-[300px] md:max-w-[320px] overflow-hidden rounded-lg border border-white/10 bg-zinc-900 shadow-lg mx-auto">
                       <img 
                         src={src} 
                         alt={`Resultado ${(idx % results.length) + 1}`} 
