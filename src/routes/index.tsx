@@ -300,9 +300,14 @@ function Index() {
                     <div className="aspect-[9/16] w-[90%] md:w-[80%] max-w-[300px] md:max-w-[320px] overflow-hidden rounded-lg border border-white/10 bg-zinc-900 shadow-lg mx-auto">
                       <img 
                         src={src} 
-                        alt={`Resultado ${idx + 1}`} 
+                        alt={`Resultado ${(idx % results.length) + 1}`} 
                         className="h-full w-full object-cover"
                         loading="lazy"
+                        onError={(e) => {
+                          // Esconde o card se a imagem não existir na pasta
+                          const parent = (e.currentTarget.closest('.shrink-0') as HTMLElement);
+                          if (parent) parent.style.display = 'none';
+                        }}
                       />
                     </div>
                   </div>
