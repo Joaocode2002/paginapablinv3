@@ -157,10 +157,9 @@ function Index() {
     <div className="bg-black text-white selection:bg-brand-green selection:text-black">
       {/* Alert Banner */}
       <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center border-b border-white/10 bg-[#0f7a2e] px-4 py-3 text-center text-xs font-bold tracking-wide text-black">
-        <span>
-          ESTE SITE PODE CAIR A QUALQUER MOMENTO
-        </span>
-        <AlertTriangle className="ml-2 h-4 w-4 text-yellow-400 stroke-[3px]" />
+        <h2 className="elementor-heading-title elementor-size-default flex items-center justify-center gap-1">
+          Acessos acima do normal. <b>ESTE SITE</b> <b>PODE CAIR A QUALQUER MOMENTO</b> ⚠️
+        </h2>
       </header>
 
       <main className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden pt-24 pb-20">
