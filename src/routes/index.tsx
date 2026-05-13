@@ -156,8 +156,8 @@ function Index() {
   return (
     <div className="bg-black text-white selection:bg-brand-green selection:text-black">
       {/* Alert Banner */}
-      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center border-b border-white/10 bg-[#0f7a2e] px-4 py-3 text-center text-xs font-bold tracking-wide text-black">
-        <h2 className="elementor-heading-title elementor-size-default flex items-center justify-center gap-1">
+      <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center border-b border-white/10 bg-[#0f7a2e] px-4 py-3 text-center text-[0.65rem] sm:text-xs font-bold tracking-wide text-black">
+        <h2 className="elementor-heading-title elementor-size-default whitespace-nowrap">
           Acessos acima do normal. <b>ESTE SITE</b> <b>PODE CAIR A QUALQUER MOMENTO</b> ⚠️
         </h2>
       </header>
